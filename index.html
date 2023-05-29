@@ -20,23 +20,23 @@
   <body>
     <form>
         <h3>Student Registration</h3>
-        <input type="text" class="form-control" placeholder="First Name" >
-        <input type="text" class="form-control" placeholder="Last Name" >
-        <input type="number" class="form-control" placeholder="Age" >
-        <select class="form-control">
+        <input type="text" class="form-control" placeholder="First Name" id = "first">
+        <input type="text" class="form-control" placeholder="Last Name" id = "last">
+        <input type="number" class="form-control" placeholder="Age" id = "age">
+        <select class="form-control" id = "subject">
           <option>Select Your Subject</option>
           <option>Development</option>
           <option>UX Design</option>
           <option>Product Design</option>
         </select>
 
-        <button class="btn btn-primary" type="button" >Add Student</button>    
+        <button class="btn btn-primary" type="button" onclick = "addStudent()">Add Student</button>    
       </form>
 
     <form>
       <h3>Custom Pizza Maker</h3>
-      <input type="text" class="form-control" placeholder="Name Your Pizza">
-      <select class="form-control">
+      <input type="text" class="form-control" placeholder="Name Your Pizza" id = "pizzaName">
+      <select class="form-control" id = "size">
         <option>Choose a Size</option>
         <option>Small</option>
         <option>Medium</option>
@@ -58,6 +58,13 @@
             <input class="form-check-input" type="radio" name="baseRadio" id="deep" value="Deep Dish">
             <label class="form-check-label" for="deep">
               Deep Dish Base
+            </label>
+          </div>
+
+          <div class="base-check">
+            <input class="form-check-input" type="radio" name="baseRadio" id="thin" value="Thin & Crispy">
+            <label class="form-check-label" for="thin">
+              Thin & Crispy
             </label>
           </div>
 
@@ -110,11 +117,33 @@
             </label>
           </div>
 
+            <div class="top-check">
+              <input class="form-check-input" name="toppings" type="checkbox" value="anchovies" id="anchovies">
+              <label class="form-check-label" for="anchovies">
+                Anchovies
+              </label>
+            </div>
+
+              <div class="top-check">
+                <input class="form-check-input" name="toppings" type="checkbox" value="extra" id="extra">
+                <label class="form-check-label" for="extra">
+                  Extra cheese
+                </label>
+              </div>
+
+                <div class="top-check">
+                  <input class="form-check-input" name="toppings" type="checkbox" value="chillies" id="chillies">
+                  <label class="form-check-label" for="chillies">
+                    Chillies
+                  </label>
+                </div>
+          </div>
+
           
 
           </div>
 
-          <button class="btn btn-primary" type="button">Make My Pizza</button>    
+          <button class="btn btn-primary" type="button" onclick = "makePizza()">Make My Pizza</button>    
   </form>
     
   </body>
