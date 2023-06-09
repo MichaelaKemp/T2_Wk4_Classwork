@@ -57,7 +57,7 @@ makePizza = () =>
         alert("Pizza Order: The " + pizzaName + " - Size: " + size + " Base: " + baseValue + ", with Salami")
     } else
     {
-        alert("Pizza Order: The " + pizzaName + " - Size: " + size + " Base: " + baseValue + ", NO Salami")
+        alert("Pizza Order: The " + pizzaName + " - Size: " + size + " Base: " + baseValue + ", with NO Salami")
     }
 
 }   
